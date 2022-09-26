@@ -1,10 +1,13 @@
-#include 'main.h'
+#include "main.h"
+
 /**
- * set_string -  sets a string
- * @s: string to set
- * @to: value to set to
+ * set_string - sets the value of a pointer to a char
+ * @s: content is to be copied
+ *@to: string
+ *Return: void
  */
+
 void set_string(char **s, char *to)
 {
-	*s = to;
+		*s = to;
 }
