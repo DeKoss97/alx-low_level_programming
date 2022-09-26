@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef _main_h_
+#define _main_h_
 /**
  * set_string - sets string to something
  * @s: string to set to
