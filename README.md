@@ -1,1 +1,1 @@
-C-programming language
+Static
