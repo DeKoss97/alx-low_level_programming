@@ -1,30 +1,36 @@
+#include "notrebloh.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
- * array_range - creates an array of integers
- *
- * @min: min number of elements
- * @max: max number of elements
- *
- * Return: array pointer address
- *         NULL if it fails
-*/
+ * *array_range - make  memory for an array
+ * @min: int type
+ * @max: int type
+ * Return:  return pointer to array
+ */
 
 int *array_range(int min, int max)
 {
-	int i, *array;
+	int *ptr;
+	int arr;
 
 	if (min > max)
-		return (NULL);
-
-	array = malloc((max - min + 1) * sizeof(int));
-	if (array == NULL)
-		return (NULL);
-
-	for (i = 0; min <= max; i++)
 	{
-		array[i] = min;
-		min++;
+		return (NULL);
 	}
-	return (array);
-  
+
+	ptr = malloc(sizeof(int) * (max - min + 1));
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+	arr = 0;
+	while (min <= max)
+	{
+		ptr[arr] = min;
+		min++;
+		arr++;
+	}
+	return (ptr);
+}
