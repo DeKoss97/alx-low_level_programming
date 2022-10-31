@@ -1,4 +1,4 @@
-#include "main.h"
+#include "Main.h"
 
 #define MAXSIZE 1024
 
